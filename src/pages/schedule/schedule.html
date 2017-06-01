@@ -9,7 +9,7 @@
         All
       </ion-segment-button>
       <ion-segment-button value="favorites">
-        Favorites
+        Completed
       </ion-segment-button>
     </ion-segment>
 
@@ -40,7 +40,7 @@
 
       <ion-item-divider sticky>
         <ion-label>
-          {{group.time}}
+          {{group.class}}
         </ion-label>
       </ion-item-divider>
 
@@ -57,10 +57,10 @@
 
         <ion-item-options>
           <button ion-button color="favorite" (click)="addFavorite(slidingItem, session)" *ngIf="segment === 'all'">
-            Favorite
+            Completed
           </button>
-          <button ion-button color="danger" (click)="removeFavorite(slidingItem, session, 'Remove Favorite')" *ngIf="segment === 'favorites'">
-            Remove
+          <button ion-button color="primary" (click)="removeFavorite(slidingItem, session, 'Grade your expirience')" *ngIf="segment === 'favorites'">
+            Grade
           </button>
         </ion-item-options>
 
