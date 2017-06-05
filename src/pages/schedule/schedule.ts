@@ -33,6 +33,7 @@ export class SchedulePage {
   shownSessions: any = [];
   groups: any = [];
   confDate: string;
+  isCompleted: boolean;
 
   constructor(
     public alertCtrl: AlertController,

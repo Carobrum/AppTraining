@@ -3,7 +3,7 @@
   "schedule": [{
     "date": "2017-06-17",
     "groups": [{
-      "class": "Human Resources",
+      "class": "Week 1",
       "sessions": [{
         "name": "Interviews",
         "timeStart": "Before Associate Start Date",
@@ -41,7 +41,7 @@
         "tracks": ["Visits"]
       }]
     }, {
-      "class": "Hiring Manager",
+      "class": "Week 2",
       "sessions": [{
         "name": "Introduce new associate to the office",
         "location": "Sala Integridad y Respeto",
@@ -68,7 +68,7 @@
         "tracks": ["Tooling"]
       }]
     }, {
-      "class": "Administrative Assistant",
+      "class": "Week 3",
       "sessions": [{
         "name": "Migrating to Ionic2",
         "location": "Room 2201",
