@@ -7,7 +7,6 @@ import { SchedulePage } from '../schedule/schedule';
 })
 export class pruebaModal {
  session: any;
-  private isSubmitted: Boolean = false;
 
     constructor(private viewCtrl: ViewController, private params: NavParams,public alertCtrl: AlertController,
     public modalCtrl: ModalController, public nav: NavController) {
