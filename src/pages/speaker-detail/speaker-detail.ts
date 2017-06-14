@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController, NavParams } from 'ionic-angular';
+import {ModalController, NavParams, ViewController,NavController } from 'ionic-angular';
 
 import { SessionDetailPage } from '../session-detail/session-detail';
 
@@ -11,9 +11,24 @@ import { SessionDetailPage } from '../session-detail/session-detail';
 export class SpeakerDetailPage {
   speaker: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public modalCtrl: ModalController,public viewCtrl: ViewController) {
     this.speaker = this.navParams.data.speaker;
+
   }
+
+
+
+showLogin() {
+let modal = this.modalCtrl.create("Hola");
+// this.navCtrl.push(modal);
+modal.present();
+}
+
+dismiss(data) {
+    this.viewCtrl.dismiss(data);
+  }
+
+
 
   goToSessionDetail(session: any) {
     this.navCtrl.push(SessionDetailPage, { 

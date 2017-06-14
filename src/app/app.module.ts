@@ -30,8 +30,10 @@ import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 
 import { CloudModule, CloudSettings } from '@ionic/cloud-angular';
+import { pruebaModal } from '../pages/session-detail/modalPrueba';
 
 
+import { Ionic2RatingModule } from 'ionic2-rating';
 const cloudSettings: CloudSettings = {
   'core': {
     'app_id': 'b811f868'
@@ -59,12 +61,16 @@ const cloudSettings: CloudSettings = {
     SpeakerListPage,
     TabsPage,
     TutorialPage,
-    SupportPage
+    SupportPage,
+    pruebaModal
+
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    IonicModule.forRoot(ConferenceApp, {}, {
+    IonicModule.forRoot(ConferenceApp, {},
+    
+     {
       links: [
         { component: TabsPage, name: 'TabsPage', segment: 'tabs' },
         { component: SchedulePage, name: 'Schedule', segment: 'schedule' },
@@ -81,7 +87,9 @@ const cloudSettings: CloudSettings = {
         { component: SignupPage, name: 'SignupPage', segment: 'signup' }
       ]
     }),
+
     CloudModule.forRoot(cloudSettings),
+    Ionic2RatingModule,
     IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
@@ -100,7 +108,8 @@ const cloudSettings: CloudSettings = {
     SpeakerListPage,
     TabsPage,
     TutorialPage,
-    SupportPage
+    SupportPage,
+    pruebaModal
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
@@ -110,4 +119,6 @@ const cloudSettings: CloudSettings = {
     SplashScreen
   ]
 })
+
+
 export class AppModule { }

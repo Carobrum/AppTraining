@@ -1,0 +1,124 @@
+ul {
+  padding: 0px;
+
+  &.rating li {
+    padding: 5px 10px !important;
+    background: none;
+    color: #ffb400;
+
+    ion-icon {
+      font-size: 30px;
+    }
+  }
+}
+
+.input{
+     border-bottom: 3px solid cornflowerblue;
+    background-color: whitesmoke;
+}
+.labelwhite{
+      white-space: normal;
+    color: steelblue;
+    text-align: center;
+}
+
+.divimagen{
+background-color: #92C5E0;
+}
+
+.imagen{
+text-align: center;
+padding-left: 15%;
+
+}
+.modalcard{
+    height: 80%;
+    margin-top: 5%;
+}
+.md .modal-wrapper{
+margin-top: 10%;
+    
+}
+.modaltitle{
+    border-bottom: none;
+    
+}
+.modallabeltitle{
+    text-align: center;
+    
+    color: cadetblue;
+}
+ .toolbar-title.toolbar-title-md{
+     font-family: inherit;
+    color: dimgray;
+ }
+
+ .item-md.item-toggle ion-label{
+    white-space: normal !important;
+   max-width: none !important;
+   width: 100%;
+    white-space: normal !important;
+   max-width: none !important;
+   width: 100%;
+   font-size: large;
+   color: darkgray;   
+ }
+
+  .center {
+        text-align: center;
+    }
+  .note.danger {
+       padding-left: 16px;
+       color: #d14;
+    }
+
+    .toolbar-title.toolbar-title-md{
+    font-size: initial;
+    }
+      .input-cover {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+  }
+ .item-cover {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: transparent;
+       cursor: pointer;
+  }
+
+ion-modal {
+    padding: 20px;
+    background: rgba(0,0,0,0.6)
+}
+#circle{
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+}
+
+.btnoutline {
+ background: none;
+ padding: 12px 22px;
+ background-color: mediumseagreen;
+    width: 90%;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+ color: #33a6cc;
+ border-color: #33a6cc;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+ border-color: #007299;
+ color: #007299;
+ box-shadow: none;
+}
+.portafolioButton{
+    width: 90%;
+    text-align:center;
+    margin:auto;
+}

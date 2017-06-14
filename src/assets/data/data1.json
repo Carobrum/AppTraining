@@ -3,132 +3,249 @@
   "schedule": [{
     "date": "2017-06-17",
     "groups": [{
-      "class": "Week 1",
+      "class": "Before Associate Start Date",
       "sessions": [{
         "name": "Interviews",
-        "timeStart": "Before Associate Start Date",
+		    "profilePic": "assets/img/icons/people.png",
+        "header":"assets/img/task/hiring.jpg",
+        "Responsable":"Responsable:Human Resources",
+        "timeStart": "People",
         "timeEnd": "",
-        "location": "GTS MX",
+        "location": "Responsable:Human Resources",
         "description": "Description about interviews.",
         "tracks": ["Visits"]
       }, {
+	     "profilePic": "assets/img/icons/keyicon.png",
+        "header":"assets/img/task/hiring.jpg",
         "name": "Hiring Documentation",
-        "timeStart": "Before Associate Start Date",
+        "timeStart": "Enabler",
         "timeEnd": "",
-        "location": "Remote",
+        "location": "Responsable:Human Resources",
         "description": "Description about Documentation.",
         "tracks": ["Documentation"]
       }, {
-        "name": "Workplace asignment",
-        "timeStart": "Before Associate Start Date",
+    	"name": "On-Boarding Plan",
+        "profilePic": "assets/img/icons/sparkicon72.png",
+        "header":"assets/img/task/hiring.jpg",
+        "timeStart": "Walmart C",
         "timeEnd": "",
-        "location": "GTS MX",
-        "description": "Description about Workplace.",
+        "location": "Responsable:Hiring Manager",
+        "description": "Description about On-Boarding Plan.",
         "tracks": ["Tooling"]
       }, {
-        "name": "Assign Team Coach",
-        "timeStart": "Before Associate Start Date",
+        "name": "Workstation Request",
+       "profilePic": "assets/img/icons/keyicon.png",
+        "header":"assets/img/task/hiring.jpg",
+	     	"timeStart": "Enabler",
         "timeEnd": "",
-        "location": "GTS MX",
+        "location": "Responsable:Administrative Assistant",
+        "description": "Description about Team Coach.",
+        "tracks": ["Documentation"]
+      },
+      
+      {
+        "name": "Workstation asignment",
+        
+"profilePic": "assets/img/icons/keyicon.png",
+        "header":"assets/img/task/hiring.jpg",
+	     	"timeStart": "Enabler",
+        "timeEnd": "",
+        "location": "Responsable:Administrative Assistant",
+        "description": "Description about Team Coach.",
+        "tracks": ["Documentation"]
+      },
+      {
+        "name": "User ID request",
+        
+"profilePic": "assets/img/icons/keyicon.png",
+        "header":"assets/img/task/hiring.jpg",
+	     	"timeStart": "Enabler",
+        "timeEnd": "",
+        "location": "Responsable:Administrative Assistant",
+        "description": "Description about Team Coach.",
+        "tracks": ["Documentation"]
+      },
+       {  
+        "name": "Activity Plan",
+        "profilePic": "assets/img/icons/sparkicon72.png",
+        "header":"assets/img/task/hiring.jpg",
+	     	"timeStart": "Objectives",
+        "timeEnd": "",
+        "location": "Responsable:Team Coach",
         "description": "Description about Team Coach.",
         "tracks": ["Activity"]
-      }, {
-        "name": "Stores and CEDIS Visits",
-        "timeStart": "Week 1",
-        "timeEnd": "Week 3",
-        "description": "Description about stores visits.",
-        "location": "Multiple locations",
+      },
+
+      {  
+        "name": "Assign  team coach",
+        "profilePic": "assets/img/icons/people.png",
+        "header":"assets/img/task/coach.png",
+	     	"timeStart": "People",
+        "timeEnd": "",
+        "location": "Responsable:Team Coach",
+        "description": "Description about Team Coach.",
         "tracks": ["Visits"]
       }]
     }, {
-      "class": "Week 2",
+      "class": "Week 1",
       "sessions": [{
-        "name": "Introduce new associate to the office",
-        "location": "Sala Integridad y Respeto",
+        "profilePic": "assets/img/icons/keyicon.png",
+        "header":"assets/img/task/hiring.jpg",
+        "name": "Badge  issued / Office Access",
+        "location": "Responsable:Human Resources",
         "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
         "speakerNames": ["Ellie Elephant"],
-        "timeStart": "Week 1",
+        "timeStart": "Enabler",
         "timeEnd": "",
-        "tracks": ["Welcoming"]
+        "tracks": ["Documentation"]
       }, {
-        "name": "Introduce to his/her team and office tour",
-        "location": "GTS MX",
+       "profilePic": "assets/img/icons/keyicon.png",
+        "header":"assets/img/task/hiring.jpg",
+        "name": "Fully Functional Working Space (Desk, PC, Headphones, Monitor)",
+        "location": "Responsable:Administrative Assistants",
         "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
         "speakerNames": ["Ted Turtle"],
-        "timeStart": "Week 1",
+       "timeStart": "Enabler",
         "timeEnd": "",
         "tracks": ["Welcoming"]
       }, {
-        "name": "Provide team onboarding material",
-        "location": "Room 2201",
+         "profilePic": "assets/img/icons/keyicon.png",
+        "header":"assets/img/task/hiring.jpg",
+        "name": "Skill Matrix survey and capability gap mapping",
+        "location": "Responsable:Hiring Manager",
         "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
         "speakerNames": ["Rachel Rabbit"],
-        "timeStart": "Week 1",
+         "timeStart": "Enabler",
         "timeEnd": "",
-        "tracks": ["Tooling"]
-      }]
+        "tracks": ["Documentation"]
+      }
+      , {
+        "profilePic": "assets/img/icons/keyicon.png",
+        "header":"assets/img/task/hiring.jpg",
+        "name": "Pathgater / Pluralsight License",
+       "location": "Responsable:Administrative Assistants",
+        "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+        "speakerNames": ["Rachel Rabbit"],
+         "timeStart": "Enabler",
+        "timeEnd": "",
+        "tracks": ["Documentation"]
+      }, {
+        "profilePic": "assets/img/icons/people.png",
+        "header":"assets/img/task/hiring.jpg",
+        "name": "Introduce new associate to his/her team and functional coah",
+        "location": "Responsable: Hiring Manager",
+        "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+        "speakerNames": ["Rachel Rabbit"],
+        "timeStart": "People",
+        "timeEnd": "10:30 am",
+        "tracks": ["Visits"]
+      }
+      ,{
+         "profilePic": "assets/img/icons/sparkicon72.png",
+        "header":"assets/img/task/hiring.jpg",
+        "name": "Clarify roles and responsibilities, objectives and job description",
+        "location": "Responsable: Hiring Manager",
+        "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+        "speakerNames": ["Isabella Iguana", "Eva Eagle"],
+        "timeStart": "Objectives",
+        "timeEnd": "10:45 am",
+        "tracks": ["Design"]
+      }
+      ,{
+         
+"profilePic": "assets/img/icons/trainingicon.png",
+        "header":"assets/img/task/hiring.jpg",
+        "name": "Share Pathgather On-Boarding Path (Product/team specific)",
+        "location": "Responsable: Team Coach",
+        "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+        "speakerNames": ["Isabella Iguana", "Eva Eagle"],
+        "timeStart": "Training",
+        "timeEnd": "10:45 am",
+        "tracks": ["Design"]
+      }
+      
+
+      ]
     }, {
-      "class": "Week 3",
+      "class": "Week 2",
       "sessions": [{
-        "name": "Migrating to Ionic2",
-        "location": "Room 2201",
+         "profilePic": "assets/img/icons/people.png",
+        "header":"assets/img/task/hiring.jpg",
+        "name": "Introduce new associate to the office – 10 minutes meeting2",
+        "location": "Responsable:Administrative Assistants",
         "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
         "speakerNames": ["Eva Eagle", "Lionel Lion"],
-        "timeStart": "10:00 am",
+       "timeStart": "People",
         "timeEnd": "10:15 am",
         "tracks": ["Welcoming"]
       }, {
-        "name": "Whats new in Angular",
-        "location": "Room 2203",
+         "profilePic": "assets/img/icons/people.png",
+        "header":"assets/img/task/hiring.jpg",
+        "name": "Walmart Culture / Ethics Induction",
+        "location": "Responsable: Human Resources",
         "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
         "speakerNames": ["Rachel Rabbit"],
-        "timeStart": "10:15 am",
+        "timeStart": "People",
         "timeEnd": "10:30 am",
         "tracks": ["Activity"]
       }, {
-        "name": "The evolution of Ionicons",
-        "location": "Room 2202",
+         
+"profilePic": "assets/img/icons/keyicon.png",
+        "header":"assets/img/task/hiring.jpg",
+        "name": "Access requests and specific PC configurations",
+        "location": "Responsable:Human Resources",
         "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
         "speakerNames": ["Isabella Iguana", "Eva Eagle"],
-        "timeStart": "10:30 am",
+        "timeStart": "Enabler",
         "timeEnd": "10:45 am",
         "tracks": ["Design"]
-      }, {
-        "name": "Ionic.io Services",
-        "location": "Room 2202",
-        "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
-        "speakerNames": ["Charlie Cheetah"],
-        "timeStart": "10:45 am",
-        "timeEnd": "11:00 am",
-        "tracks": ["Services"]
       }]
     }, {
-      "class": "New Associate",
+       "profilePic": "assets/img/speakers/bear.jpg",
+        "header":"assets/img/task/hiring.jpg",
+      "class": "Week 3-4",
       "sessions": [{
-        "name": "Ionic Workshop",
-        "location": "Room 2201",
+        "name": "Meet and chat with GTS - MX Leadership",
+        "location": "Responsable:Human Resources",
         "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
         "speakerNames": ["Karl Kitten", "Lionel Lion"],
         "timeStart": "11:00 am",
         "timeEnd": "11:45 am",
         "tracks": ["Workshop"]
       }, {
-        "name": "Community Interaction",
-        "location": "Room 2203",
+         "profilePic": "assets/img/speakers/bear.jpg",
+        "header":"assets/img/task/hiring.jpg",
+        "name": "Store and CEDIS visits",
+        "location": "Responsable:Human Resources",
         "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
         "speakerNames": ["Lionel Lion", "Gino Giraffe"],
-        "timeStart": "11:30 am",
+        "timeStart": "Walmart C",
         "timeEnd": "11:50 am",
         "tracks": ["Communication"]
       }, {
-        "name": "Navigation in Ionic",
-        "location": "Room 2203",
+         "profilePic": "assets/img/speakers/bear.jpg",
+        "header":"assets/img/task/hiring.jpg",
+        "name": "Review and adjust objectives 60-90 days",
+        "location": "Objectives",
+        "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+        "speakerNames": ["Rachel Rabbit", "Eva Eagle"],
+        "timeStart": "Objectives",
+        "timeEnd": "12:00 pm",
+        "tracks": ["Navigation"]
+      }
+      , {
+         "profilePic": "assets/img/speakers/bear.jpg",
+        "header":"assets/img/task/hiring.jpg",
+        "name": "Review and validate padrino program",
+         "location": "Responsable:Team Coach",
         "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
         "speakerNames": ["Rachel Rabbit", "Eva Eagle"],
         "timeStart": "11:30 am",
         "timeEnd": "12:00 pm",
         "tracks": ["Navigation"]
-      }]
+      }
+      
+      ]
     }, {
       "class": "Padrino",
       "sessions": [{
