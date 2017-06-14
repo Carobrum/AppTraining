@@ -14,6 +14,8 @@ import { UserData } from '../../providers/user-data';
 import { SessionDetailPage } from '../session-detail/session-detail';
 import { ScheduleFilterPage } from '../schedule-filter/schedule-filter';
 
+declare var  jQuery:any;
+declare var $:any;
 
 @Component({
   selector: 'page-schedule',
@@ -33,7 +35,6 @@ export class SchedulePage {
   shownSessions: any = [];
   groups: any = [];
   confDate: string;
-  isCompleted: boolean;
 
   constructor(
     public alertCtrl: AlertController,
@@ -44,12 +45,46 @@ export class SchedulePage {
     public toastCtrl: ToastController,
     public confData: ConferenceData,
     public user: UserData,
-  ) {}
+  ) {
+
+
+
+
+  }
 
   ionViewDidLoad() {
     this.app.setTitle('Schedule');
     this.updateSchedule();
+    this.toggle();
+
   }
+
+
+toggle(){
+ var i = 1;
+$('.progress .circle').removeClass().addClass('circle');
+$('.progress .bar').removeClass().addClass('bar');
+setInterval(function() {
+$('.progress .circle:nth-of-type(' + i + ')').addClass('active');
+
+$('.progress .circle:nth-of-type(' + (i - 1) + ')').removeClass('active').addClass('done');
+
+$('.progress .circle:nth-of-type(' + (i - 1) + ') .label').html('&#10003;');
+
+$('.progress .bar:nth-of-type(' + (i - 1) + ')').addClass('active');
+
+$('.progress .bar:nth-of-type(' + (i - 2) + ')').removeClass('active').addClass('done');
+
+i++;
+
+if (i == 0) {
+$('.progress .bar').removeClass().addClass('bar');
+$('.progress div.circle').removeClass().addClass('circle');
+i = 1;
+}
+}, 1000);
+
+}
 
   updateSchedule() {
     // Close any open sliding items when the schedule updates
@@ -169,4 +204,9 @@ export class SchedulePage {
       }, 1000);
     });
   }
+
+
+
+  
 }
+

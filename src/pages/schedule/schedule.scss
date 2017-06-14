@@ -1,15 +1,76 @@
 $categories: (
  welcoming: color($colors, primary),
- activity: #AC282B,
- communication: #8E8D93,
- tooling: #FE4C52,
- services: #FD8B2D,
- design: #FED035,
- workshop: #69BB7B,
- visits: #3BC7C4,
- documentation: #B16BE3,
- navigation: #6600CC,
+ enabler: #AC282B,
+ walmartc: #8E8D93,
+ people: #FE4C52,
+ objectives: #FD8B2D,
 );
+
+.progress {
+width: 100%;
+margin: 20px auto;
+text-align: center;
+}
+.progress .circle,
+.progress .bar {
+display: inline-block;
+background: #fff;
+width: 40px; height: 40px;
+border-radius: 40px;
+border: 1px solid #d5d5da;
+}
+.progress .bar {
+position: relative;
+width: 80px;
+height: 3px;
+top: -33px;
+margin-left: -5px;
+margin-right: -5px;
+border-left: none;
+border-right: none;
+border-radius: 0;
+}
+.progress .circle .label {
+display: inline-block;
+width: 32px;
+height: 32px;
+line-height: 32px;
+border-radius: 32px;
+margin-top: 3px;
+color: #b5b5ba;
+font-size: 17px;
+}
+.progress .circle .title {
+color: #b5b5ba;
+font-size: 13px;
+line-height: 30px;
+margin-left: -5px;
+}
+
+/* Done / Active */
+.progress .bar.done,
+.progress .circle.done {
+background: #eee;
+}
+.progress .bar.active {
+background: linear-gradient(to right, #EEE 40%, #FFF 60%);
+}
+.progress .circle.done .label {
+color: #FFF;
+background: #81CE97;
+box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+}
+.progress .circle.done .title {
+color: #444;
+}
+.progress .circle.active .label {
+color: #FFF;
+background: #0c95be;
+box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+}
+.progress .circle.active .title {
+color: #0c95be;
+}
 
 @function auxiliary-categories() {
   @return map-remove($categories);
@@ -20,6 +81,10 @@ page-schedule {
    ion-item-sliding[track=#{$track}] ion-label {
      border-left: 4px solid $value;
      padding-left: 10px;
+    
+   }
+   background-image: {
+     background-color: white
    }
   }
 }

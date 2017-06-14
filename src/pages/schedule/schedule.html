@@ -1,3 +1,5 @@
+
+
 <ion-header>
   <ion-navbar no-border-bottom>
     <button ion-button menuToggle>
@@ -29,10 +31,28 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="outer-content speaker-list">
   <ion-refresher (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
+
+
+<div class="progress">
+<div class="circle done">
+<span class="label">1</span>
+<span class="title">0%</span>
+</div>
+<span class="bar done"></span>
+<div class="circle done">
+<span class="label">2</span>
+<span class="title">25%</span>
+</div>
+<span class="bar half"></span>
+<div class="circle active">
+<span class="label">3</span>
+<span class="title">50%</span>
+</div>
+</div>
 
   <ion-list #scheduleList [hidden]="shownSessions === 0">
 
@@ -46,12 +66,16 @@
 
       <ion-item-sliding *ngFor="let session of group.sessions" #slidingItem [attr.track]="session.tracks[0] | lowercase" [hidden]="session.hide">
 
-        <button ion-item (click)="goToSessionDetail(session)" [ngStyle]="{'background-color': user.hasFavorite(session.name)? '#e6f7ff' : 'primary'}">
+        <button ion-item (click)="goToSessionDetail(session)">
+            <ion-avatar item-start>
+                  <img [src]="session.profilePic" alt="Speaker profile pic">
+                </ion-avatar>
           <h3>{{session.name}}</h3>
+        
           <p>
-            {{session.timeStart}} &mdash;
-            {{session.timeEnd}}:
-            {{session.location}}
+          <!-- Category: {{session.timeStart}}-->
+            {{session.timeEnd}}
+            {{session.responsable}}
           </p>
         </button>
 

@@ -1,23 +1,41 @@
 
 page-tutorial {
   .toolbar-background {
-    background: transparent;
+
     border-color: transparent;
+  
   }
 
   .slide-zoom {
     height: 100%;
+  
   }
 
+.fistpage{
+   background-color: #0070C9;
+}
   .slide-title {
-    margin-top: 2.8rem;
+    margin-top: 0px;
   }
-
+  .Gtsiano
+  {
+    background-color: #18345E;
+  }
+.slide-titleGTS {
+    margin-top: 0%;
+    color: #0070C9;
+    font-size: 1.2em;
+  }
   .slide-image {
-    max-height: 50%;
-    max-width: 60%;
-    margin: 36px 0;
+    max-height: 100%;
+    max-width: 100%;
+    margin:0;
   }
+.slide-image-GTS{
+     max-height: 100%;
+    max-width: 100%;
+    margin-top: 20%;
+}
 
   b {
     font-weight: 500;
@@ -34,4 +52,7 @@ page-tutorial {
     }
   }
 
+ion-navbar{
+ background-color:  #0070C9;
+}
 }
