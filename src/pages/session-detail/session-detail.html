@@ -10,27 +10,48 @@
 
 <ion-content padding>
 
-   <img [src]="session.header"><br>
+ <img src="assets/img/propuestauno.png" class="slide-image-GTS"/>
 
-  <h1 class="center">{{session.name}}</h1>
+  <h1 class="center">BRIGADE PROGRAM</h1>
 
-  <h4 *ngFor="let speaker of session.speakers">
-    {{speaker.name}}
+  <h4>
+  BRIGADE PROGRAM
   </h4>
-
   <p>
-   Category: {{session.category}}  {{session.timeEnd}}
+  <b> Description</b>
+  </p>
+  <p>In this course you will be able to resolve problems in a critical situacions like storms and fire</p>
+
+   <p>
+  <b> Responsable:</b> Human Resources
   </p>
 
-  <p>{{session.responsable}}</p>
+  <p>
+  <b>Availability:</b> 25/100
+  </p>
 
-  <p>{{session.description}}</p>
+<p>
+  <b>Date:</b> 22/06/2017  </p>
 
-  <ion-footer><p class="center">Please rate the task to continue.</p>
+<p>
+  <b>Location:</b> Walmart Toreo  </p>
+  
+
+<div><p class="center">Please rate the task to continue.</p>
          <rating [(ngModel)]="rate"   readOnly="false"  max="5"  emptyStarIconName="star-outline" 
        halfStarIconName="star-half"  starIconName="star" (click)='openFilters();' class="center">    
       </rating>
-</ion-footer>
+
+<div class="row">
+  <ion-col col-sm-6>
+         <button ion-button type="submit" class="btnoutline" (click)='Confirm();'>Confirm</button>
+  </ion-col>
+    <ion-col col-sm-6>
+      <button ion-button type="submit" class="btnoutline">Decline</button>
+  </ion-col>
+</div>
+
+</div>
 
 </ion-content>
 

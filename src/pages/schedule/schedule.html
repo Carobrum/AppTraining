@@ -4,26 +4,15 @@
       <ion-icon name="menu"></ion-icon>
     </button>
 
-    <ion-segment [(ngModel)]="segment" (ionChange)="updateSchedule()">
-      <ion-segment-button value="all">
-        All
-      </ion-segment-button>
-      <ion-segment-button value="favorites">
-        Completed
-      </ion-segment-button>
-    </ion-segment>
-
     <ion-buttons end>
-      <button ion-button icon-only (click)="presentFilter()">
-        <ion-icon ios="ios-options-outline" md="md-options"></ion-icon>
+      <button ion-button icon-only (click)="UserPage()">
+        <ion-icon name="ios-contact"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
 
-  <ion-toolbar no-border-top>
-    <ion-searchbar color="primary" [(ngModel)]="queryText" (ionInput)="updateSchedule()" placeholder="Search">
-    </ion-searchbar>
-  </ion-toolbar>
+<br>
+<br>
 </ion-header>
 
 <ion-content class="outer-content speaker-list">
@@ -32,6 +21,53 @@
   </ion-refresher>
 
 
+<section class="container fondo">
+
+  <div class="row" (click)="InfoCourse()">
+       <ion-col col-sm-2 approxItemHeight="30px">
+            <div></div>
+       </ion-col>
+       
+       <ion-col col-sm-4 approxItemHeight="30px">
+           <div id="test-circle3"></div>
+       </ion-col>
+        <ion-col col-sm-2 approxItemHeight="30px">
+            <div></div>
+       </ion-col>
+    </div>
+
+
+  <div class="row">
+       <ion-col col-sm-4 approxItemHeight="30px">
+            <div id="test-circle20"></div>
+       </ion-col>
+       
+       <ion-col col-sm-2 approxItemHeight="30px">
+           <div id="test-circle21"></div>
+       </ion-col>
+        <ion-col  col-sm-4 approxItemHeight="30px">
+            <div id="test-circle22"></div>
+       </ion-col>
+    </div>
+
+    <div class="row">
+       <ion-col col-sm-4 approxItemHeight="30px">
+            <div id="test-circle7">
+            </div>
+       </ion-col>
+       
+       <ion-col col-sm-2 approxItemHeight="30px">
+           <div id="test-circle5"></div>
+       </ion-col>
+        <ion-col  col-sm-4 approxItemHeight="30px">
+            <div id="test-circle6"></div>
+       </ion-col>
+    </div>
+<button  ion-button (click)="increment()"> HOLA </button>
+
+</section>
+
+<!--
   <div class="progress">
     <div class="circle done">
       <span class="label">1</span>
@@ -47,45 +83,11 @@
       <span class="label">3</span>
       <span class="title">50%</span>
     </div>
-  </div>
+  </div>-->
 
   <ion-list #scheduleList [hidden]="shownSessions === 0">
 
-    <ion-item-group *ngFor="let group of groups" [hidden]="group.hide">
-
-      <ion-item-divider sticky>
-        <ion-label>
-          {{group.class}}
-        </ion-label>
-      </ion-item-divider>
-
-      <ion-item-sliding *ngFor="let session of group.sessions" #slidingItem [attr.track]="session.tracks[0] | lowercase" [hidden]="session.hide">
-
-        <button ion-item (click)="goToSessionDetail(session)">
-            <ion-avatar item-start>
-                  <img [src]="session.profilePic" alt="Speaker profile pic">
-                </ion-avatar>
-          <h3>{{session.name}}</h3>
-        
-          <p>
-          <!-- Category: {{session.timeStart}}-->
-            {{session.timeEnd}}
-            {{session.responsable}}
-          </p>
-        </button>
-
-        <ion-item-options>
-          <button ion-button color="favorite" (click)="addFavorite(slidingItem, session)" *ngIf="segment === 'all'">
-            Completed
-          </button>
-          <button ion-button color="primary" (click)="removeFavorite(slidingItem, session, 'Grade your expirience')" *ngIf="segment === 'favorites'">
-            Grade
-          </button>
-        </ion-item-options>
-
-      </ion-item-sliding>
-
-    </ion-item-group>
+   
 
   </ion-list>
 
@@ -93,15 +95,6 @@
     No Sessions Found
   </ion-list-header>
 
-  <ion-fab bottom right #fab>
-    <button ion-fab><ion-icon name="share"></ion-icon></button>
-    <ion-fab-list side="top">
-      <button ion-fab color="vimeo" (click)="openSocial('Vimeo', fab)"><ion-icon name="logo-vimeo"></ion-icon></button>
-      <button ion-fab color="google" (click)="openSocial('Google+', fab)"><ion-icon name="logo-googleplus"></ion-icon></button>
-      <button ion-fab color="twitter" (click)="openSocial('Twitter', fab)"><ion-icon name="logo-twitter"></ion-icon></button>
-      <button ion-fab color="facebook" (click)="openSocial('Facebook', fab)"><ion-icon name="logo-facebook"></ion-icon></button>
-    </ion-fab-list>
-  </ion-fab>
 
 
 </ion-content>

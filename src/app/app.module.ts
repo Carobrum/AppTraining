@@ -31,8 +31,8 @@ import { UserData } from '../providers/user-data';
 
 import { CloudModule, CloudSettings } from '@ionic/cloud-angular';
 import { pruebaModal } from '../pages/session-detail/modalPrueba';
-
-
+import { UserInfoPage } from '../pages/user-info/user-info';
+import { ModalSuccess } from '../pages/session-detail/modalSuccess';
 import { Ionic2RatingModule } from 'ionic2-rating';
 const cloudSettings: CloudSettings = {
   'core': {
@@ -62,6 +62,8 @@ const cloudSettings: CloudSettings = {
     TabsPage,
     TutorialPage,
     SupportPage,
+    UserInfoPage,
+    ModalSuccess,
     pruebaModal
 
   ],
@@ -109,6 +111,8 @@ const cloudSettings: CloudSettings = {
     TabsPage,
     TutorialPage,
     SupportPage,
+    UserInfoPage,
+    ModalSuccess,
     pruebaModal
   ],
   providers: [

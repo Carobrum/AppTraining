@@ -1,0 +1,33 @@
+page-user-info {
+.imgUser{
+    background-color: #007299;
+
+}
+.imagenUsuario{
+    text-align: center;
+}
+
+.graystyle{
+    border-bottom: 2px solid lightgray;
+    padding-left: 3%;
+}
+
+ion-icon {
+    display: inline-block;
+    font-family: "Ionicons";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-rendering: auto;
+    text-transform: none;
+    padding-top: 2%;
+    color:gray;
+}
+
+.spaceicon{
+padding-left: 3%;
+}
+}

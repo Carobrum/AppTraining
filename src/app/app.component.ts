@@ -20,6 +20,7 @@ import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 
 import { FacebookAuth } from '@ionic/cloud-angular';
+import { UserInfoPage } from '../pages/user-info/user-info';
 
 
 export interface PageInterface {

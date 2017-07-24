@@ -13,6 +13,8 @@ import { UserData } from '../../providers/user-data';
 
 import { SessionDetailPage } from '../session-detail/session-detail';
 import { ScheduleFilterPage } from '../schedule-filter/schedule-filter';
+import { UserInfoPage } from '../user-info/user-info';
+
 
 declare var  jQuery:any;
 declare var $:any;
@@ -44,46 +46,192 @@ export class SchedulePage {
     public navCtrl: NavController,
     public toastCtrl: ToastController,
     public confData: ConferenceData,
+    public nav: NavController,
     public user: UserData,
+    
   ) {
-
+this.nav=nav;
 
 
 
   }
+
+
+UserPage(){
+ this.nav.push(UserInfoPage);
+}
 
   ionViewDidLoad() {
     this.app.setTitle('Schedule');
     this.updateSchedule();
-    this.toggle();
+   this.toggle();
 
   }
 
+  InfoCourse(){
+    this.nav.push(SessionDetailPage);
+  }
+
+increment(){
+  var percen=100;
+  console.log($('#test-circle7').attr('percent'));
+ //$('#test-circle7').empty().removeData().attr('data-percent', '[100]').circliful();
+ //document.getElementById('#test-circle7').innerHTML = "";
+ $('#test-circle7').empty();
+ $("#test-circle7").circliful({ animationStep: 5, foregroundBorderWidth: 5, backgroundBorderWidth: 15, percent: 100 }); 
+}
 
 toggle(){
- var i = 1;
-$('.progress .circle').removeClass().addClass('circle');
-$('.progress .bar').removeClass().addClass('bar');
-setInterval(function() {
-$('.progress .circle:nth-of-type(' + i + ')').addClass('active');
+ $("#test-circle").circliful({
+            animation: 1,
+            animationStep: 5,
+            foregroundBorderWidth: 15,
+            backgroundBorderWidth: 15,
+            percent: 38,
+            textSize: 0,
+            textStyle: 'font-size: 0px;',
+            textColor: '#fff',
+            multiPercentage: 1,
+            percentages: [10, 20, 30]
+        });
 
-$('.progress .circle:nth-of-type(' + (i - 1) + ')').removeClass('active').addClass('done');
+ $("#test-circle1v2").circliful({
+            animation: 1,
+            animationStep: 5,
+            foregroundBorderWidth: 15,
+            backgroundBorderWidth: 15,
+            percent: 0,
+            textSize: 0,
+            textStyle: 'font-size: 0px;',
+            textColor: '#fff',
+            multiPercentage: 1,
+            percentages: [0, 0, 0]
+        });
 
-$('.progress .circle:nth-of-type(' + (i - 1) + ') .label').html('&#10003;');
+ $("#test-circle1v3").circliful({
+            animation: 1,
+            animationStep: 5,
+            foregroundBorderWidth: 15,
+            backgroundBorderWidth: 15,
+            percent: 0,
+            textSize: 28,
+            textStyle: 'font-size: 0px;',
+            textColor: '#fff',
+            multiPercentage: 1,
+            percentages: [0, 0, 0]
+        });
 
-$('.progress .bar:nth-of-type(' + (i - 1) + ')').addClass('active');
+        $("#test-circle2").circliful({
+            animation: 0,
+            animationStep: 6,
+            foregroundBorderWidth: 5,
+            backgroundColor: "none",
+           textColor: '#fff',
+            percent: 50,
+            iconColor: '#3498DB',
+            icon: 'none',
+            iconSize: '40',
+            iconPosition: 'middle'
+        });
 
-$('.progress .bar:nth-of-type(' + (i - 2) + ')').removeClass('active').addClass('done');
+        $("#test-circle3").circliful({
+            animation: 1,
+            animationStep: 6,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 1,
+            percent: 88,
+            iconColor: '#3498DB',
+            icon: 'none',
+            iconSize: 'o',
+            iconPosition: 'middle'
+        });
 
-i++;
+        $("#test-circle4").circliful({
+            animation: 1,
+            animationStep: 1,
+            target: 10,
+            start: 2,
+            showPercent: 1,
+            backgroundColor: '#000',
+            foregroundColor: '#A8C64A',
+            fontColor: '#000',
+            iconColor: '#000',
+            icon: 'none',
+            iconSize: '0',
+            iconPosition: 'middle',
+            multiPercentage: 1,
+            text: 'No Kids'
+        });
 
-if (i == 0) {
-$('.progress .bar').removeClass().addClass('bar');
-$('.progress div.circle').removeClass().addClass('circle');
-i = 1;
-}
-}, 1000);
+        $("#test-circle5").circliful({
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 15,
+            percent: 80,            
+            icon: 'none',
+            iconPosition: 'middle',
+            text: 'Superama Store',            
+             textBelow: true
+        });
 
+        $("#test-circle6").circliful({
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 15,
+            percent: 80,            
+            icon: 'none',
+            iconPosition: 'middle',
+            text: 'Walmart Store',            
+            textBelow: true
+        });
+
+          $("#test-circle7").circliful({
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 15,
+            percent: 80,            
+            icon: 'none',
+            iconPosition: 'middle',
+            text: 'Sams Store',            
+            textBelow: true
+        });
+
+
+
+
+          $("#test-circle20").circliful({
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 15,
+            percent: 80,            
+            icon: 'none',
+            iconPosition: 'middle',
+            text: 'Ethics',            
+            textBelow: true
+        });
+
+          $("#test-circle21").circliful({
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 15,
+            percent: 0,            
+            icon: 'none',
+            iconPosition: 'middle',
+            text: 'Culture',            
+            textBelow: true
+        });
+
+          $("#test-circle22").circliful({
+            animationStep: 5,
+            foregroundBorderWidth: 5,
+            backgroundBorderWidth: 15,
+            percent: 0,            
+            icon: 'none',
+            iconPosition: 'middle',
+            text: 'Induction',            
+            textBelow: true
+
+        });
 }
 
   updateSchedule() {
